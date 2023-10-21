@@ -18,7 +18,7 @@ function Navbar(){
                 <div>
                     <Link to='/faculdade'><FaculdadeIcon ativo={location.pathname === '/faculdade'}/></Link>
                     <Link to='/destaque'><DestaqueIcon ativo={location.pathname === '/destaque'}/></Link>
-                    <Link to='/home'state={{zIndex:2}}><HomeIcon ativo={location.pathname === '/home'}/></Link>
+                    <Link to='/'state={{zIndex:2}}><HomeIcon ativo={location.pathname === '/'}/></Link>
                     <Link to='/eventos'><EventosIcon ativo={location.pathname === '/eventos'}/></Link>
                     <Link to='/profile'><ProfileIcon ativo={location.pathname === '/profile'}/></Link>
                     

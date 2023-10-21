@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <DestaqueScreen/>
   },
   {
-    path: '/home',
+    path: '/',
     element: <HomeScreen/>
   },
   {
