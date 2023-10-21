@@ -1,0 +1,30 @@
+body{
+    background-color: #020913;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 340px;
+    height: 48px;
+    margin-top: 35px;
+    /* background-color: #eeeeee22; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    width: 290px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search svg{
+    margin-left: 10px;
+}
