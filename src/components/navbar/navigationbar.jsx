@@ -15,14 +15,25 @@ function Navbar(){
     return(
         <>
             <div className="navbar">
-                <div>
-                    <Link to='/faculdade'><FaculdadeIcon ativo={location.pathname === '/faculdade'}/></Link>
-                    <Link to='/destaque'><DestaqueIcon ativo={location.pathname === '/destaque'}/></Link>
-                    <Link to='/'state={{zIndex:2}}><HomeIcon ativo={location.pathname === '/'}/></Link>
-                    <Link to='/eventos'><EventosIcon ativo={location.pathname === '/eventos'}/></Link>
-                    <Link to='/profile'><ProfileIcon ativo={location.pathname === '/profile'}/></Link>
-                    
-                    
+                <div className="section">
+                    <div>
+                        <Link to='/faculdade'><FaculdadeIcon ativo={location.pathname === '/faculdade'}/></Link>
+                    </div>
+                    <div>
+                        <Link to='/destaque'><DestaqueIcon ativo={location.pathname === '/destaque'}/></Link>
+                    </div>
+
+                    <div>
+                        <Link to='/'state={{zIndex:2}}><HomeIcon ativo={location.pathname === '/'}/></Link>
+                    </div>
+
+                    <div>
+                        <Link to='/eventos'><EventosIcon ativo={location.pathname === '/eventos'}/></Link>
+                    </div>
+
+                    <div>
+                        <Link to='/profile'><ProfileIcon ativo={location.pathname === '/profile'}/></Link>
+                    </div>
                 </div>
             </div>
         </>
