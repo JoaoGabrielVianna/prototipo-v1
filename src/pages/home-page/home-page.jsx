@@ -10,7 +10,7 @@ function HomeScreen() {
                 <nav>
                     <div className="search">
                         <Search/>
-                        <input type="text" placeholder="Pesquisar" style={{backgroundColor: 'transparent', border: 0, color: 'white'}}/>
+                        <input type="file" placeholder="Pesquisar" style={{backgroundColor: 'transparent', border: 0, color: 'white'}}/>
                     </div>
                 </nav>
                 {/* <h1>PAGINA HOME</h1> */}
