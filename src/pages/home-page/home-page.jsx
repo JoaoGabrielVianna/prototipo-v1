@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/navigationbar";
 import './home-page.css'
 import Search from "../../assets/icons/search";
+import Follow from "../../components/follow/follow";
 
 function HomeScreen() {
     return (
@@ -10,11 +11,17 @@ function HomeScreen() {
                 <nav>
                     <div className="search">
                         <Search/>
-                        <input type="file" placeholder="Pesquisar" style={{backgroundColor: 'transparent', border: 0, color: 'white'}}/>
+                        <input type="text" placeholder="Pesquisar" style={{backgroundColor: 'transparent', border: 0, color: 'white', fontSize: 17}}/>
                     </div>
                 </nav>
-                {/* <h1>PAGINA HOME</h1> */}
-                <Navbar><div style={{ width: 100, height: 100, backgroundColor: 'green' }} /></Navbar>
+                <div style={{width: '100%',backgroundColor: '#fff2', paddingLeft: 20, display: 'flex', alignItems: 'center'}}>
+                    <h1 style={{fontSize: 20, color: 'white'}}>FACULDADES</h1>
+
+                </div>
+                <Follow/>
+
+
+                <Navbar></Navbar>
             </body>
         </>
     )
