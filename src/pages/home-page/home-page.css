@@ -31,3 +31,10 @@ nav{
 .search svg{
     margin-left: 10px;
 }
+
+.objeto{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+}

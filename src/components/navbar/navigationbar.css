@@ -9,8 +9,8 @@
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: black;
 }
 .navbar .section {
@@ -23,6 +23,12 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--blue-dark);
+    z-index: 1;
+}
+.icon{
+  z-index: 1;
+  /* background-color: #0A121E; */
+  /* background-color: aqua; */
 }
 
 .navbar .section div{
