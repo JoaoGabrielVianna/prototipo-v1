@@ -36,7 +36,7 @@ function Navbar() {
             <div className="navbar">
                 <div className="section">
                 <div className="circle" style={{ transform: `translate(${position.x}px, ${position.y}px)`, width: 90, height: 90, borderRadius: 100, border: '3px solid white', backgroundColor: '#0A121E', transition: 'transform 1s', zIndex: 0, position: 'absolute', display: 'flex', alignItems: 'flex-end'}}></div>
-                    <div style={{width: '100%', height: '99%', backgroundColor: '#0A121E', position: 'absolute'}}></div>
+                    <div style={{width: '100%', height: '99%', backgroundColor: '#0A121E', position: 'absolute', bottom: 0}}></div>
                     <div className="icon">
                         <Link to='/faculdade' onClick={() => moveCircle(-140,0)}><FaculdadeIcon ativo={location.pathname === '/faculdade'} /></Link>
                     </div>
