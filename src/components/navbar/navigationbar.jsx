@@ -36,12 +36,12 @@ function Navbar() {
             <div className="navbar">
                 <div className="section">
                 <div className="circle" style={{ transform: `translate(${position.x}px, ${position.y}px)`, width: 90, height: 90, borderRadius: 100, border: '3px solid white', backgroundColor: '#0A121E', transition: 'transform 1s', zIndex: 0, position: 'absolute', display: 'flex', alignItems: 'flex-end'}}></div>
-                    <div style={{width: '100%', height: '99%', backgroundColor: '#0A121E', position: 'absolute', bottom: 0}}></div>
+                    <div style={{width: '100%', height: '99.9%', backgroundColor: '#0A121E', position: 'absolute', bottom: 0}}></div>
                     <div className="icon">
-                        <Link to='/faculdade' onClick={() => moveCircle(-140,0)}><FaculdadeIcon ativo={location.pathname === '/faculdade'} /></Link>
+                        <Link to='/faculdade' onClick={() => moveCircle(-138,0)}><FaculdadeIcon ativo={location.pathname === '/faculdade'} /></Link>
                     </div>
                     <div className="icon">
-                        <Link to='/destaque' onClick={() => moveCircle(-70,0)}><DestaqueIcon ativo={location.pathname === '/destaque'} /></Link>
+                        <Link to='/destaque' onClick={() => moveCircle(-73,0)}><DestaqueIcon ativo={location.pathname === '/destaque'} /></Link>
                     </div>
 
                     <div className="icon">
@@ -53,7 +53,7 @@ function Navbar() {
                     </div>
 
                     <div className="icon">
-                        <Link to='/profile' onClick={() => moveCircle(140,0)}><ProfileIcon ativo={location.pathname === '/profile'} /></Link>
+                        <Link to='/profile' onClick={() => moveCircle(138,0)}><ProfileIcon ativo={location.pathname === '/profile'} /></Link>
                     </div>
                 </div>
                 
