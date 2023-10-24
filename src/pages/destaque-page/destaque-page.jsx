@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/navigationbar";
+import Indicator from "../../components/navbar/indicator";
 
 function DestaqueScreen(){
     return(

@@ -8,7 +8,7 @@ import MovingComponent from "./teste";
 function HomeScreen() {
     return (
         <>
-            <body>
+            <div className="body">
                 <nav>
                     <div className="search">
                         <Search/>
@@ -23,7 +23,7 @@ function HomeScreen() {
                 {/* <MovingComponent/> */}
 
                 <Navbar></Navbar>
-            </body>
+            </div>
         </>
     )
 }

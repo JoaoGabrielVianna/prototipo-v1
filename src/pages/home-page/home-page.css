@@ -2,6 +2,12 @@ body{
     background-color: #020913;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
