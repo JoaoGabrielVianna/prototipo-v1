@@ -50,7 +50,7 @@
   border: 2px solid white; /* Borda vermelha (pode ajustar a cor conforme necessário) */
   border-radius: 50%; /* Bordas arredondadas para criar um círculo */
   position: absolute;
-  transition: transform  0.5s ease-in-out;
+  transition: transform  .5s ease-in-out;
   bottom: 0; /* Posição vertical no centro */
   left:0; /* Posição horizontal no centro */
   /* transform: translate(-50%, -50%); Centraliza o elemento */
