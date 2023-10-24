@@ -12,27 +12,27 @@ function Navbar() {
     const location = useLocation();
     const icons = [
         { componente: <FaculdadeIcon ativo={location.pathname === '/faculdade'} />, local: '/faculdade', pX: -7 },
-        { componente: <DestaqueIcon ativo={location.pathname === '/destaque'} />, local: '/destaque', pX: 10 },
-        { componente: <HomeIcon ativo={location.pathname === '/'} />, local: '/', pX: 20 },
-        { componente: <EventosIcon ativo={location.pathname === '/eventos'} />, local: '/eventos', pX: 30 },
-        { componente: <ProfileIcon ativo={location.pathname === '/profile'} />, local: '/profile', pX: 40 },
+        { componente: <DestaqueIcon ativo={location.pathname === '/destaque'} />, local: '/destaque', pX: 63 },
+        { componente: <HomeIcon ativo={location.pathname === '/'} />, local: '/', pX: 135 },
+        { componente: <EventosIcon ativo={location.pathname === '/eventos'} />, local: '/eventos', pX: 207 },
+        { componente: <ProfileIcon ativo={location.pathname === '/profile'} />, local: '/profile', pX: 277 },
     ]
 
-    const [position, setPosition] = useState(0);
+    const [position, setPosition] = useState();
 
-    const changeScreen = ({x}) => {
+    const changeScreen = (x) => {
         setPosition(x)
     }
 
     return (
-        <><Indicator positionX={position}/>
+        <>
         <div className="navbar">
-            
+            <Indicator positionX={position}/>
             <div className="section">
                 
                 {icons.map((icon, index) => (
-                    <div key={index} className="icon" style={{height: '100%', width: '100%'}} onClick={() => {changeScreen(icon.pX), console.log(icon.pX)}}>
-                        <Link to={icon.local}>{icon.componente}</Link>
+                    <div key={index} className="icon" style={{height: '100%', width: '100%'}} >
+                        <Link to={icon.local} onClick={() => {changeScreen(icon.pX), console.log(icon.pX)}}>{icon.componente}</Link>
                         
                     </div>
                 ))}

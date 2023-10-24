@@ -11,8 +11,9 @@
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
-  /* background-color: pink; */
+  background-color: pink;
   border-top: 2px solid white;
+  z-index: 1;
 }
 .navbar .section {
     width: 100%;
@@ -23,10 +24,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: green; */
+    background-color: var(--blue-dark);
 
     position: absolute;
-    z-index: 1;
+    z-index: 5;
 }
 .icon{
   /* height: 7px; */
@@ -39,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .Indicator {
@@ -51,7 +52,7 @@
   position: absolute;
   transition: transform  0.5s ease-in-out;
   bottom: 0; /* Posição vertical no centro */
-  left: 0; /* Posição horizontal no centro */
+  left:0; /* Posição horizontal no centro */
   /* transform: translate(-50%, -50%); Centraliza o elemento */
-  z-index: 0; /* Coloca o círculo vazado acima dos ícones */
+  z-index: 4; /* Coloca o círculo vazado acima dos ícones */
 }
